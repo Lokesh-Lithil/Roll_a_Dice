@@ -51,11 +51,11 @@ while num =='y':
         print(x,end='\n')
     num = input("Roll the Dice again..🎲 (Y/N)>>").lower()
 
-    if num == 'n':
-        print("Thanks for Playing!")
-    elif num != 'y' and  num != 'n':
+    while num != 'y' and  num != 'n':
         print("Invalid input..❌")
         num = input("Roll the Dice again..🎲 (Y/N)>>").lower()
+    if num == 'n':
+        print("Thanks for Playing!")
 
 
 
